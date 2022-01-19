@@ -1,0 +1,35 @@
+{
+  "name": "use-different-module-types",
+  "version": "1.0.0",
+  "description": "Check that different builds of Typescript work well.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mliebelt/use-different-module-types.git"
+  },
+  "keywords": [
+    "typescript",
+    "build"
+  ],
+  "author": "mliebelt",
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.9",
+    "@types/chess.js": "^0.11.2",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^17.0.8",
+    "mocha": "^9.1.3",
+    "rollup": "^2.59.0",
+    "@rollup/plugin-commonjs": "21.0.1",
+    "@rollup/plugin-node-resolve": "13.1.3",
+    "should": "^13.2.3",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4",
+    "tslib": "^2"
+    
+  },
+  "dependencies": {
+    "@mliebelt/pgn-parser": "^1.4.1",
+    "chess.js": "^0.12.0",
+    "sync-fetch": "^0.3.1"
+  }
+}
