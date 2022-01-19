@@ -20,6 +20,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: cd modules/rollup-simple
     - run: npm ci
     - run: npm run build --if-present
-    # - run: npm test
+    - run: cd ../rollup-use-library
+    - run: npm ci
+    - run: npm run build --if-present
