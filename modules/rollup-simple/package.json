@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require ts-node/register ./test/*.ts",
+    "test": "../../node_modules/.bin/mocha --require ts-node/register ./test/*.ts",
     "build6": "tsc -m es6 --outDir lib-esm",
     "build5": "tsc",
     "buildu": "../../node_modules/.bin/rollup ./lib-esm/pgn.js -c rollup.config.js -o ./lib/bundle.js --format umd",
