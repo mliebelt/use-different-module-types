@@ -20,5 +20,6 @@ All modules should provide
 * some `target` folders (different names used, hopefully consistent)that contain the result of the compilation
 * some `example` files at the top level that use the target files and demonstrate how they can be used.
   * CommonJS/Node: `js` files that require the created target, and demonstrate, that it works.
+  * MJS: `mjs` files that import the created target, and demonstrate, that it works.
   * Browser/UMD: `html` file, so you should be able to use `http-server` to start a local web server. The result of the function usage should be visible then.
 * One `package.json` file that defines the build process, and depending on the tools used (tsc, rollup, webpack) additional configuration files.

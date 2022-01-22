@@ -1,3 +1,4 @@
-var helloWorld = require('./lib/pgn.js')
+var pkg = require('./lib/pgn.js')
+const helloWorld = pkg.helloChess
 
-helloWorld()
+console.info(helloWorld())

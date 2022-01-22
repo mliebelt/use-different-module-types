@@ -1,13 +1,13 @@
 {
-  "name": "rollup-simple",
+  "name": "rollup-use-library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build6": "tsc -m es6 --outDir lib-esm",
+    "build6": "tsc -m es6 --outDir lib-esm && mv lib-esm/pgn.js lib/pgn.mjs",
     "build5": "tsc",
-    "buildu": "../../node_modules/.bin/rollup ./lib-esm/pgn.js -c rollup.config.js -o ./lib/bundle.js --format umd",
+    "buildu": "../../node_modules/.bin/rollup ./lib/pgn.mjs -c rollup.config.js -o ./lib/bundle.js --format umd",
     "build": "npm run clean && npm run build5 && npm run build6 && npm run buildu",
     "clean": "rm -fr lib/* lib-esm/*"
   },
